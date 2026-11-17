@@ -1,0 +1,8 @@
+<h1>User Data</h1>
+<form (ngSubmit)="onSubmit()">
+
+    <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Enter Name">
+    <input type="text" [(ngModel)]="city" name="city" class="form-control" placeholder="Enter City">
+    <input type="text" [(ngModel)]="age" name="age" class="form-control"  placeholder="Enter Age">
+    <button type="submit" >Submit Here!</button>
+</form>

@@ -1,0 +1,19 @@
+.cla1{
+    background-color: rgb(48, 194, 194);
+}
+
+.cla2{
+    background-color: blueviolet;
+}
+
+.active {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.inactive {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}

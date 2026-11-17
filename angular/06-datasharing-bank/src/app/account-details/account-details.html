@@ -1,0 +1,27 @@
+<app-account-dashboard (SubmitEvent)="viewdashboard($event)"></app-account-dashboard>
+<h1>Selected Account</h1>
+<div *ngIf="acct">
+    <table class="table ">
+    <tr>
+        <th> Account Id</th>
+        <th> Account Holder Name</th>
+        <th> Account Type</th>
+        <th> Account Balance</th>
+       
+    <tr>
+
+    <tr>
+        <td> {{acct.id}}</td>
+        <td> {{acct.name}}</td>
+        <td> {{acct.type}}</td>
+        <td> {{acct.balance}}</td>
+        
+    </tr>
+</table>
+    <input type="Text" placeholder="Enter Amount" [(ngModel)]="val">
+    <button type="submit" (click)="onDeposit(acct)">Deposit</button>
+    <button type="submit" (click)="onWithdraw(acct)"> Withdraw</button>
+    
+    
+
+    

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="card mt-5">
+    <div class="card-header">
+      <h1>Typing Test</h1>
+    </div>
+    <div class="card-body">
+      <p>Start Typing This Passage:</p>
+      <p>{{ passage }}</p>
+
+      <input
+        type="text"
+        placeholder="Start Typing"
+        [disabled]="!running"
+        (keydown)="onKeyPress($event)"
+        class="form-control mb-2"
+      />
+
+      <button
+        class="btn btn-primary"
+        (click)="startTimer()"
+        [disabled]="running"
+      >
+        Start The Test
+      </button>
+
+      <div class="mt-3">
+        <span>{{ correctedText }}</span>
+        <span [class]="correctClass">{{ letter }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="card">
+    <div class="card-header">
+      <h3>Result</h3>
+    </div>
+    <div class="card-body">
+      <p>Timer: {{ counter }} s</p>
+      <p>WPM: {{ wpm | number: '1.0-2' }}</p>
+      <p>Accuracy Count: {{ accuracyCount }}</p>
+      <p>Accuracy Percentage: {{ accuracyPercentage | number: '1.0-2' }}%</p>
+    </div>
+  </div>
+</div>

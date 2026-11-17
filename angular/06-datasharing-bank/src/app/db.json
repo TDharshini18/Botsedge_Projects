@@ -1,0 +1,64 @@
+
+   [
+    {
+      "id": 1,
+      "name": "Dharshini",
+      "type": "Savings",
+      "balance": 5000
+    },
+    {
+      "id": 2,
+      "name": "Arjun",
+      "type": "Current",
+      "balance": 12000
+    },
+    {
+      "id": 3,
+      "name": "Meera",
+      "type": "Salary",
+      "balance": 8000
+    },
+    {
+      "id": 4,
+      "name": "Karthik",
+      "type": "Savings",
+      "balance": 15000
+    },
+    {
+      "id": 5,
+      "name": "Priya",
+      "type": "Current",
+      "balance": 9000
+    },
+    {
+      "id": 6,
+      "name": "Vijay",
+      "type": "Savings",
+      "balance": 25000
+    },
+    {
+      "id": 7,
+      "name": "Anjali",
+      "type": "Salary",
+      "balance": 11000
+    },
+    {
+      "id": 8,
+      "name": "Rahul",
+      "type": "Current",
+      "balance": 17000
+    },
+    {
+      "id": 9,
+      "name": "Sneha",
+      "type": "Savings",
+      "balance": 6000
+    },
+    {
+      "id": 10,
+      "name": "Suresh",
+      "type": "Salary",
+      "balance": 20000
+    }
+  ]
+

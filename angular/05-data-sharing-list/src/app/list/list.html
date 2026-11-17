@@ -1,0 +1,20 @@
+<app-form (SubmitEvent)="addUser($event)"></app-form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Age</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let user of users; let i=index" >
+            <td>{{i+1}}</td>
+            <td>{{user.Age}}</td>
+            <td>{{user.Name}}</td>
+        </tr>
+
+    </tbody></table >
+
+

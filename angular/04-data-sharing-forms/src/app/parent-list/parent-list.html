@@ -1,0 +1,24 @@
+
+<app-child-form (SubmitEvent)="adduser($event)"></app-child-form>
+
+<h2>User Database</h2>
+
+<table class="table table-bordered mt-3" *ngIf="users.length > 0">
+  <thead class="table-dark">
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.city }}</td>
+    </tr>
+  </tbody>
+</table>
