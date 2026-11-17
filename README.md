@@ -27,6 +27,7 @@ npm install
 ng serve
 ```
 
+
 ## Spring Boot
 
 | Folder | What it covers |
@@ -46,3 +47,4 @@ cd springboot/<project>
 
 `05-jwt-postgres-auth` reads its configuration from environment variables:
 `DB_USERNAME`, `DB_PASSWORD`, and `JWT_SECRET`.
+
